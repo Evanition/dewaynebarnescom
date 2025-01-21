@@ -31,8 +31,7 @@
       <div class="cta-container">
         <router-link to="/projects" class="button">View My Projects</router-link>
         <router-link to="/contact" class="button">Get in Touch</router-link>
-        <router-link to="/Resume.pdf" class="button">View My Resume</router-link>
-      </div>
+        <a href="/Resume.pdf" target="_blank" class="button">View My Resume</a>      </div>
     </div>
   </div>
 </template>
