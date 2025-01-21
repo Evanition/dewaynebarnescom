@@ -5,8 +5,8 @@
       <h1>Dewayne Barnes</h1>
       <p class="tagline">Aspiring Software Engineer | Passionate about Innovation</p>
       <p class="intro">
-        I am a highly motivated computer science graduate with a passion for software
-        development and a keen interest in web technologies. I am excited to
+        I am a highly motivated Senior computer science student at UPenn with a passion for software
+        development and a particular interest in Machine Learning. I am excited to
         contribute my skills to innovative projects and seek opportunities where I can
         learn and grow.
       </p>
@@ -31,6 +31,7 @@
       <div class="cta-container">
         <router-link to="/projects" class="button">View My Projects</router-link>
         <router-link to="/contact" class="button">Get in Touch</router-link>
+        <router-link to="/Resume.pdf" class="button">View My Resume</router-link>
       </div>
     </div>
   </div>

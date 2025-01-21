@@ -260,10 +260,11 @@ const projects = ref([
     description: `Making a site which can arbitrage between different betting platforms for guaranteed money`,
     skills: [
       { name: 'Javascript', logo: '/javascript.png' },
-      { name: 'React Native', logo: '/react.png' },
+      { name: 'React', logo: '/react.png' },
       { name: 'S3', logo: '/s3.png' },
       { name: 'Python', logo: '/python.png' },
-      { name: 'Pytorch', logo: '/pytorch.png' },
+      { name: 'Pandas', logo: '/pandas.png' },
+      { name: 'Firebase', logo: '/firebase.png' },
     ],
     topics: ['Full Stack','Data Science', 'Web Development','Cloud Computing','AI','Machine Learning','Frontend'],
     date: '2025',

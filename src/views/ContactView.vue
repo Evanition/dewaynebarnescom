@@ -21,7 +21,7 @@
         >
       </p>
        <p>
-         Resume: <a href="/yourresume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link">View Resume</a>
+         Resume: <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link">View Resume</a>
         </p>
     </div>
   </div>

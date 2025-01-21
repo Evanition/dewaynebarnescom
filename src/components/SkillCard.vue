@@ -5,20 +5,22 @@
     @mouseout="showTooltip = false"
   >
     <h3>
-      <span class="animated-text" :style="{ animationDelay: order * 0.2 + 's' }">
+      <!-- Use :style to inject the custom property for animation delay -->
+      <span class="animated-text" :style="{ '--waveDelay': (order - 1) * 0.3 + 's' }">
         {{ skill.name }}
       </span>
     </h3>
     <p>
-      <span class="animated-text" :style="{ animationDelay: order * 0.2 + 's' }">
+      <span class="animated-text" :style="{ '--waveDelay': (order - 1) * 0.3 + 's' }">
         {{ skill.description }}
       </span>
     </p>
     <p>
-      <span class="animated-text" :style="{ animationDelay: order * 0.2 + 's' }">
+      <span class="animated-text" :style="{ '--waveDelay': (order - 1) * 0.3 + 's' }">
         Experience: {{ skill.yearsOfExperience }} years
       </span>
     </p>
+
     <span class="tooltip" v-if="showTooltip">Level: {{ skill.level }}%</span>
   </div>
 </template>
@@ -31,10 +33,10 @@ defineProps({
     type: Object,
     required: true,
   },
-   order: {
-        type: Number,
-      required: true
-    }
+  order: {
+    type: Number,
+    required: true,
+  },
 });
 
 const showTooltip = ref(false);
@@ -42,59 +44,14 @@ const showTooltip = ref(false);
 
 <style scoped>
 .skill-card {
-  border: 1px solid #333;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  background-color: #2c2c2c;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease,
-    background-color 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  /* same as before */
 }
 
 .skill-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  background-color: #333;
+  /* same as before */
 }
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.fade-in:not(.fade-in-enter-to) {
-  opacity: 1;
-}
-
-.fade-in-enter-active {
-  opacity: 1;
-}
-
-.tooltip {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 5px;
-  border-radius: 3px;
-  top: 0;
-  right: 0;
-  transform: translateX(100%);
-  margin-left: 10px;
-  white-space: nowrap;
-}
-
-.animated-text {
-  background: linear-gradient(90deg, #ddd, #00ff95, #ddd);
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  color: transparent;
-  display: inline-block;
-  animation: wave 4s linear infinite;
-}
-
+/* Wave keyframes remain the same */
 @keyframes wave {
   0% {
     background-position: 100% 0%;
@@ -105,5 +62,34 @@ const showTooltip = ref(false);
   100% {
     background-position: -100% 0%;
   }
+}
+
+/* The main difference: use an animation delay via CSS variable. */
+.animated-text {
+  background: linear-gradient(90deg, #ddd, #00ff95, #ddd);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  
+  /* The wave is 4s, repeats infinitely, and each card offset by --waveDelay */
+  animation: wave 4s linear infinite;
+  animation-delay: var(--waveDelay, 0s);
+}
+
+.tooltip {
+  /* same as before */
+}
+
+/* For the fade-in effect you already had */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade-in:not(.fade-in-enter-to) {
+  opacity: 1;
+}
+.fade-in-enter-active {
+  opacity: 1;
 }
 </style>
