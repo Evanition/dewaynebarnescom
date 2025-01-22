@@ -1,6 +1,6 @@
 # My Personal Portfolio Website
 
-I made a pretty cool site using VUe and VIte
+I made a pretty cool site using Vue and VIte
 
 ## Live Demo
 
