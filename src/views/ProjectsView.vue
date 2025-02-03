@@ -47,7 +47,7 @@ const projects = ref([
     id: 4,
     title: 'Twitter Bot',
     description:
-      'Built a bot whichread tweets in and via a markov decision process was able to generate realistic tweets',
+      'Built a bot which read tweets and via a Markov decision process was able to generate realistic tweets',
     skills: [ { name: 'Java', logo: '/java.png' }],
     topics: ['AI','Machine Learning'],
     date: '2022',
@@ -56,7 +56,7 @@ const projects = ref([
   {
     id: 5,
     title: 'J Compiler',
-    description: 'Made a compiler for a stacked based language called J ',
+    description: 'Made a compiler for a stack-based language called J',
     skills: [ { name: 'C', logo: '/c.png' }, { name: 'Assembly', logo: '/asm.png' }],
     topics: ['Compilers'],
     date: '2022',
@@ -66,7 +66,7 @@ const projects = ref([
     id: 6,
     title: 'Web Scraper',
     description:
-      'Built a web scraper to scrape Penn\'s course catalog and find prerequisites and based on that reccommend courses for incoming students',
+      'Built a web scraper to scrape Penn\'s course catalog and find prerequisites and based on that recommend courses for incoming students',
     skills: [ { name: 'Java', logo: '/java.png' }, { name: 'Html', logo: '/html.png' }],
     topics: ['Web Scraping'],
     date: '2023',
@@ -76,7 +76,7 @@ const projects = ref([
     id: 7,
     title: 'Senator Tweets',
     description:
-      'Analyzed thousands of senators tweets to determine when and how seneators of different parties tweet',
+      'Analyzed thousands of senators tweets to determine when and how senators of different parties tweet',
     skills: [{ name: 'SQL', logo: '/sql.png' }],
     topics: ['Data Science','Cloud Computing'],
     date: '2022',
@@ -86,9 +86,9 @@ const projects = ref([
     id: 8,
     title: 'Image Compression',
     description:
-      'Used divide and conquer to make an image compression alorgorithim that couls compress images by 72%',
+      'Used divide and conquer to make an image compression algorithm that could compress images by 72%',
     skills: [ { name: 'Java', logo: '/java.png' }],
-    topics: ['Algorithims'],
+    topics: ['Algorithms'],
     date: '2023',
     importance: 6,
   },
@@ -96,7 +96,7 @@ const projects = ref([
     id: 9,
     title: 'Penn Shell',
     description:
-      'Created a bash like shell with forreground and background processes; standard input and output redirections; pipelines; and job control.',
+      'Created a bash-like shell with foreground and background processes, standard input and output redirections, pipelines, and job control.',
     skills: [ { name: 'C', logo: '/c.png' }],
     topics: ['Systems Programming'],
     date: '2023',
@@ -106,7 +106,7 @@ const projects = ref([
     id: 10,
     title: 'Penn OS',
     description:
-      'Created a fully fledged operating system with FAT, schedueler, and custom system calls',
+      'Created a fully fledged operating system with FAT, scheduler, and custom system calls',
     link: '#',
     skills: [{ name: 'C', logo: '/c.png' }],
     topics: ['Systems Programming'],
@@ -117,7 +117,7 @@ const projects = ref([
     id: 11,
     title: 'IOT Monitoring Device',
     description:
-      'Implemented and set up a simple end-to-end IoT monitoring service with LoRaclient and LoRaWAN gateway devices using simulation in a software emulaton',
+      'Implemented and set up a simple end-to-end IoT monitoring service with LoRa client and LoRaWAN gateway devices using simulation in a software emulation',
     link: '#',
     skills: [ { name: 'LLVM', logo: '/llvm.png' }, { name: 'NodeJS', logo: '/nodejs.png' }, { name: 'WireShark', logo: '/wireshark.png' }],
     topics: ['Networks'],
@@ -126,8 +126,8 @@ const projects = ref([
   },
   {
     id: 12,
-    title: 'Risc V Processor',
-    description: `Developed a RISC-V implementation with one other student using  SystemVerilog, Included a
+    title: 'RISC-V Processor',
+    description: `Developed a RISC-V implementation with one other student using SystemVerilog. Included a
                5-stage pipeline, branch prediction, and integration with memory`,
     skills: [ { name: 'System Verilog', logo: '/systemverilog.png' }, { name: 'Python', logo: '/python.png' }],
     topics: ['Systems Programming'],
@@ -153,8 +153,8 @@ const projects = ref([
   },
   {
     id: 14,
-    title: `Box Security system`,
-    description: `Built a security system for a box that would only open if the correct password was yelled out out of 2 arduino UNO's and cutom printed parts`,
+    title: `Box Security System`,
+    description: `Built a security system for a box that would only open if the correct password was yelled out by two Arduino UNOs and custom printed parts`,
       skills: [
           { name: 'Arduino', logo: '/arduino.png' },
           { name: 'AutoCAD', logo: '/autocad.png' },
@@ -166,7 +166,7 @@ const projects = ref([
   {
     id: 15,
     title: `Pennstagram`,
-    description: `Made a full stack instagram clone with a team of 4 hosted on the cloud with a functional reccomendation system and chat`,
+    description: `Made a full-stack Instagram clone with a team of 4 hosted on the cloud with a functional recommendation system and chat`,
     skills: [
       {name: 'DynamoDB', logo: '/dynamodb.png'},
       { name: 'TypeScript', logo: '/typescript.png' },
@@ -182,7 +182,7 @@ const projects = ref([
   },
   {
     id: 18,
-    title: `Image Processing with CNN's`,
+    title: `Image Processing with CNNs`,
     description: `Built a system to process images and detect objects in them as well as handwritten digits`,
     skills: [
       { name: 'Python', logo: '/python.png' },
@@ -195,7 +195,7 @@ const projects = ref([
   {
     id: 19,
     title: `Language Model`,
-    description: `Created a model from a corpus of all of shakespeares work to generate new shakespearian text`,
+    description: `Created a model from a corpus of all of Shakespeare's work to generate new Shakespearean text`,
     skills: [
       { name: 'Python', logo: '/python.png' },
       {name: 'Pytorch', logo: '/pytorch.png'},
@@ -219,7 +219,7 @@ const projects = ref([
   {
     id: 21,
     title: `Reinforcement Learning`,
-    description: `Created a model using tranformers to predict and create a model for a cars motion around a track`,
+    description: `Created a model using transformers to predict and create a model for a car's motion around a track`,
     skills: [
       { name: 'Python', logo: '/python.png' },
       {name: 'Pytorch', logo: '/pytorch.png'},
@@ -256,7 +256,7 @@ const projects = ref([
   },
   {
     id: 25,
-    title: `Risky Buisness`,
+    title: `Risky Business`,
     description: `Making a site which can arbitrage between different betting platforms for guaranteed money`,
     skills: [
       { name: 'Javascript', logo: '/javascript.png' },
@@ -284,7 +284,7 @@ const projects = ref([
   {
     id: 27,
     title: `HTTPS Server`,
-    description: `Developed a Key Value Store with a HTTPS server`,
+    description: `Developed a Key Value Store with an HTTPS server`,
     skills: [
       { name: 'EC2', logo: '/ec2.png' },
       { name: 'Apache Spark', logo: '/spark.png' },
